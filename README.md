@@ -81,3 +81,18 @@ java Main
 | Aplicación al proyecto final | 2 |
 | Uso de GitHub e IA documentada | 1.5 |
 
+## Resolución de ejercicios
+
+### Ejercicio 1
+
+Árbol dado:
+    10
+   /  \
+  5    15
+ / \   / \
+2   7 12 20
+
+**Preorden:** 10, 5, 2, 7, 15, 12, 20
+**Inorden:** 2, 5, 7, 10, 12, 15, 20
+**Postorden:** 2, 7, 5, 12, 20, 15, 10
+**BFS:** 10, 5, 15, 2, 7, 12, 20
