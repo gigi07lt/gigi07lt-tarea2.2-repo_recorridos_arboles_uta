@@ -57,6 +57,12 @@ public class Main {
         }
     }
 
+    public static int contarNodos(Nodo raiz) {
+        if (raiz == null)
+            return 0;
+        return 1 + contarNodos(raiz.izquierda) + contarNodos(raiz.derecha);
+    }
+
     public static void main(String[] args) {
         Nodo raiz = new Nodo(10);
         raiz.izquierda = new Nodo(5);
@@ -84,6 +90,8 @@ public class Main {
 
         System.out.print("\nBFS: ");
         bfs(raiz);
+
+        System.out.print("\nTotal de nodos: " + contarNodos(raiz));
 
         System.out.println();
     }

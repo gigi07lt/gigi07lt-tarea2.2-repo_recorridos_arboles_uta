@@ -51,6 +51,10 @@ void bfs(Nodo* raiz) {
         if (actual->derecha != nullptr) cola.push(actual->derecha);
     }
 }
+int contarNodos(Nodo* raiz) {
+    if (raiz == nullptr) return 0;
+    return 1 + contarNodos(raiz->izquierda) + contarNodos(raiz->derecha);
+}
 
 int main() {
     Nodo* raiz = new Nodo(10);
@@ -80,6 +84,9 @@ int main() {
     cout << "\nBFS: ";
     bfs(raiz);
 
+    cout << "\nTotal de nodos: " << contarNodos(raiz);
     cout << endl;
     return 0;
+
+
 }
