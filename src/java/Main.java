@@ -16,28 +16,32 @@ class Nodo {
 public class Main {
 
     public static void preorden(Nodo raiz) {
-        if (raiz == null) return;
+        if (raiz == null)
+            return;
         System.out.print(raiz.dato + " ");
         preorden(raiz.izquierda);
         preorden(raiz.derecha);
     }
 
     public static void inorden(Nodo raiz) {
-        if (raiz == null) return;
+        if (raiz == null)
+            return;
         inorden(raiz.izquierda);
         System.out.print(raiz.dato + " ");
         inorden(raiz.derecha);
     }
 
     public static void postorden(Nodo raiz) {
-        if (raiz == null) return;
+        if (raiz == null)
+            return;
         postorden(raiz.izquierda);
         postorden(raiz.derecha);
         System.out.print(raiz.dato + " ");
     }
 
     public static void bfs(Nodo raiz) {
-        if (raiz == null) return;
+        if (raiz == null)
+            return;
 
         Queue<Nodo> cola = new LinkedList<>();
         cola.add(raiz);
@@ -46,8 +50,10 @@ public class Main {
             Nodo actual = cola.poll();
             System.out.print(actual.dato + " ");
 
-            if (actual.izquierda != null) cola.add(actual.izquierda);
-            if (actual.derecha != null) cola.add(actual.derecha);
+            if (actual.izquierda != null)
+                cola.add(actual.izquierda);
+            if (actual.derecha != null)
+                cola.add(actual.derecha);
         }
     }
 
@@ -59,6 +65,11 @@ public class Main {
         raiz.izquierda.derecha = new Nodo(7);
         raiz.derecha.izquierda = new Nodo(12);
         raiz.derecha.derecha = new Nodo(20);
+        // nuevos nodos (Ejercicio 2)
+        raiz.izquierda.izquierda.izquierda = new Nodo(1);
+        raiz.izquierda.izquierda.derecha = new Nodo(3);
+        raiz.derecha.derecha.izquierda = new Nodo(18);
+        raiz.derecha.derecha.derecha = new Nodo(25);
 
         System.out.println("RECORRIDOS DE ARBOLES BINARIOS - UTA");
 
