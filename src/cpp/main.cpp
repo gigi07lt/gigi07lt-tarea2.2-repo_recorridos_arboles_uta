@@ -60,6 +60,11 @@ int main() {
     raiz->izquierda->derecha = new Nodo(7);
     raiz->derecha->izquierda = new Nodo(12);
     raiz->derecha->derecha = new Nodo(20);
+    // nuevos nodos (Ejercicio 2)
+    raiz->izquierda->izquierda->izquierda = new Nodo(1);
+    raiz->izquierda->izquierda->derecha = new Nodo(3);
+    raiz->derecha->derecha->izquierda = new Nodo(18);
+    raiz->derecha->derecha->derecha = new Nodo(25);
 
     cout << "RECORRIDOS DE ARBOLES BINARIOS - UTA" << endl;
 
