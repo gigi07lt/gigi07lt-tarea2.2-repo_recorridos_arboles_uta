@@ -87,12 +87,13 @@ java Main
 
 Árbol dado:
 
-    10
-   /  \
-  5    15
- / \   / \
-2   7 12 20
-
+```text
+        10
+       /  \
+      5    15
+     / \   / \
+    2   7 12 20
+```
 
 **Preorden:** 10, 5, 2, 7, 15, 12, 20  
 
@@ -101,6 +102,74 @@ java Main
 **Postorden:** 2, 7, 5, 12, 20, 15, 10  
 
 **BFS:** 10, 5, 15, 2, 7, 12, 20  
+
+---
+
+### Ejercicio 2
+
+Árbol modificado con los nodos 1, 3, 18 y 25:
+
+```text
+            10
+          /    \
+         5      15
+       /  \    /   \
+      2    7  12   20
+     / \           / \
+    1   3        18  25
+```
+
+**Preorden:** 10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25  
+
+**Inorden:** 1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25  
+
+**Postorden:** 1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10  
+
+**BFS:** 10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25  
+
+#### Captura C++
+
+![C++ Recorrido](assets/cpp-recorrido.png)
+
+#### Captura Java
+
+![Java Recorrido](assets/java-recorrido.png)
+
+---
+
+### Ejercicio 3
+
+Se implementó una función recursiva para contar la cantidad total de nodos del árbol binario.
+
+**Resultado obtenido:**  
+Total de nodos: 11
+
+#### Captura C++
+
+![C++ Ejercicio 3](assets/cpp-ejercicio3.png)
+
+#### Captura Java
+
+![Java Ejercicio 3](assets/java-ejercicio3%20(2).png)
+
+---
+
+### Ejercicio 4
+
+Se implementó una función recursiva para contar las hojas del árbol binario.
+
+**Resultado obtenido:**  
+Total de hojas: 6
+
+#### Captura C++
+
+![C++ Ejercicio 4](assets/cpp-ejercicio4.png)
+
+#### Captura Java
+
+![Java Ejercicio 4](assets/java-ejercicio4.png)
+
+---
 
 ## Ejercicio 5 aplicado al proyecto final
 
@@ -121,3 +190,27 @@ Representación de módulos del sistema Smart Campus mediante un árbol binario:
 2. Para procesar primero los módulos internos se usaría **Postorden**, porque primero procesa los hijos y finalmente el nodo principal.
 
 3. Para mostrar módulos nivel por nivel se usaría **BFS**, porque recorre el árbol por niveles utilizando una cola.
+
+---
+
+## Preguntas de reflexión
+
+### 1. ¿Qué recorrido sirve para ordenar valores en un BST?
+
+El recorrido Inorden permite mostrar los valores ordenados de menor a mayor en un Árbol Binario de Búsqueda (BST).
+
+### 2. ¿Qué diferencia existe entre DFS y BFS?
+
+DFS recorre el árbol en profundidad utilizando recursividad o pila, mientras que BFS recorre el árbol por niveles utilizando una cola.
+
+### 3. ¿Por qué BFS requiere una cola?
+
+Porque necesita mantener el orden de visita de los nodos por niveles, procesando primero los nodos que fueron agregados antes.
+
+### 4. ¿En qué caso real se puede usar Preorden?
+
+Se puede usar para mostrar menús principales de un sistema o para copiar la estructura de un árbol.
+
+### 5. ¿En qué caso real se puede usar Postorden?
+
+Se puede usar para eliminar estructuras jeráricas o procesar submódulos antes del módulo principal.
