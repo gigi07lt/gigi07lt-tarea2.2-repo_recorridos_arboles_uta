@@ -55,7 +55,14 @@ int contarNodos(Nodo* raiz) {
     if (raiz == nullptr) return 0;
     return 1 + contarNodos(raiz->izquierda) + contarNodos(raiz->derecha);
 }
+int contarHojas(Nodo* raiz) {
+    if (raiz == nullptr) return 0;
 
+    if (raiz->izquierda == nullptr && raiz->derecha == nullptr)
+        return 1;
+
+    return contarHojas(raiz->izquierda) + contarHojas(raiz->derecha);
+}
 int main() {
     Nodo* raiz = new Nodo(10);
     raiz->izquierda = new Nodo(5);
@@ -85,6 +92,7 @@ int main() {
     bfs(raiz);
 
     cout << "\nTotal de nodos: " << contarNodos(raiz);
+    cout << "\nTotal de hojas: " << contarHojas(raiz);
     cout << endl;
     return 0;
 

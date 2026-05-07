@@ -63,6 +63,16 @@ public class Main {
         return 1 + contarNodos(raiz.izquierda) + contarNodos(raiz.derecha);
     }
 
+    public static int contarHojas(Nodo raiz) {
+        if (raiz == null)
+            return 0;
+
+        if (raiz.izquierda == null && raiz.derecha == null)
+            return 1;
+
+        return contarHojas(raiz.izquierda) + contarHojas(raiz.derecha);
+    }
+
     public static void main(String[] args) {
         Nodo raiz = new Nodo(10);
         raiz.izquierda = new Nodo(5);
@@ -92,6 +102,7 @@ public class Main {
         bfs(raiz);
 
         System.out.print("\nTotal de nodos: " + contarNodos(raiz));
+        System.out.print("\nTotal de hojas: " + contarHojas(raiz));
 
         System.out.println();
     }
