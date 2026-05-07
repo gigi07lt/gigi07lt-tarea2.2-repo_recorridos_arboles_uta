@@ -150,7 +150,7 @@ Total de nodos: 11
 
 #### Captura Java
 
-![Java Ejercicio 3](assets/java-ejercicio3-2.png)
+![Java Ejercicio 3](assets/java-ejercicio3-2.png.png)
 
 ---
 
