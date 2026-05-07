@@ -171,6 +171,7 @@ Total de hojas: 6
 
 ---
 
+
 ## Ejercicio 5 aplicado
 
 En el proyecto final Smart Campus, los árboles binarios pueden utilizarse para organizar módulos y procesos del sistema de forma jerárquica.
@@ -195,6 +196,14 @@ Esta estructura permite organizar de manera eficiente los diferentes componentes
 
 3. Para mostrar módulos nivel por nivel se usaría **BFS**, porque recorre el árbol por niveles utilizando una cola.
 
+---
+### Relación de los nodos agregados con el proyecto final
+
+Aunque el árbol utilizado en los ejercicios trabaja con valores numéricos, los nodos agregados en el Ejercicio 2 pueden interpretarse como nuevos módulos o funcionalidades dentro del proyecto final Smart Campus.
+
+En el contexto del Smart Campus, estos nuevos nodos representan servicios adicionales que pueden formar parte del sistema, como la gestión de credenciales, solicitud de documentos, navegación dentro del campus y generación de reportes.
+
+De esta manera, el ejercicio permite practicar la inserción de nuevos nodos en un árbol binario y relacionarlo con una estructura jerárquica real del proyecto final.
 ---
 
 ## Preguntas de reflexión
