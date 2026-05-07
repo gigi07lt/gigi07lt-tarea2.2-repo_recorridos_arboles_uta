@@ -150,7 +150,7 @@ Total de nodos: 11
 
 #### Captura Java
 
-![Java Ejercicio 3](assets/java-ejercicio3%20(2).png)
+![Java Ejercicio 3](assets/java-ejercicio3-2.png)
 
 ---
 
@@ -171,9 +171,13 @@ Total de hojas: 6
 
 ---
 
-## Ejercicio 5 aplicado al proyecto final
+## Ejercicio 5 aplicado
 
-Representación de módulos del sistema Smart Campus mediante un árbol binario:
+En el proyecto final Smart Campus, los árboles binarios pueden utilizarse para organizar módulos y procesos del sistema de forma jerárquica.
+
+La raíz del árbol representa el sistema principal Smart Campus, mientras que los nodos hijos representan módulos específicos como gestión de usuarios, gestión académica, solicitudes y navegación dentro del campus.
+
+Por ejemplo:
 
 ```text
              Sistema Smart Campus
@@ -182,7 +186,7 @@ Representación de módulos del sistema Smart Campus mediante un árbol binario:
         /        \              /          \
  Registrar    Buscar       Prestar      Reportes
 ```
-
+Esta estructura permite organizar de manera eficiente los diferentes componentes del Smart Campus y facilita la navegación de estudiantes, docentes y trabajadores dentro del sistema.
 ### Explicación de recorridos
 
 1. Para mostrar el menú principal se usaría el recorrido **Preorden**, porque primero visita la raíz y luego los submódulos.
