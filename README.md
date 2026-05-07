@@ -227,3 +227,36 @@ Se puede usar para mostrar menús principales de un sistema o para copiar la est
 ### 5. ¿En qué caso real se puede usar Postorden?
 
 Se puede usar para eliminar estructuras jeráricas o procesar submódulos antes del módulo principal.
+---
+
+## Uso de GitHub
+
+Durante el desarrollo de la práctica se utilizó GitHub para:
+
+- Clonar el repositorio base.
+- Gestionar versiones del proyecto mediante commits.
+- Subir cambios realizados en C++ y Java.
+- Organizar capturas y documentación del proyecto.
+- Mantener un historial de avances de cada ejercicio.
+
+Se utilizaron comandos básicos de Git como:
+
+```bash
+git add .
+git commit -m "mensaje"
+git push
+```
+
+---
+
+## Uso de Inteligencia Artificial
+
+Se utilizó inteligencia artificial como herramienta de apoyo académico para:
+
+- Comprender el funcionamiento de los recorridos de árboles binarios.
+- Resolver dudas sobre compilación y configuración de C++ y Java.
+- Mejorar la documentación del README.
+- Comprender el uso de Git y GitHub.
+- Generar comentarios explicativos en el código.
+
+La inteligencia artificial fue utilizada únicamente como apoyo de aprendizaje y guía durante el desarrollo de la práctica.
