@@ -101,3 +101,23 @@ java Main
 **Postorden:** 2, 7, 5, 12, 20, 15, 10  
 
 **BFS:** 10, 5, 15, 2, 7, 12, 20  
+
+## Ejercicio 5 aplicado al proyecto final
+
+Representación de módulos del sistema Smart Campus mediante un árbol binario:
+
+```text
+             Sistema Smart Campus
+             /                  \
+      Gestión de Usuarios    Gestión de Recursos
+        /        \              /          \
+ Registrar    Buscar       Prestar      Reportes
+```
+
+### Explicación de recorridos
+
+1. Para mostrar el menú principal se usaría el recorrido **Preorden**, porque primero visita la raíz y luego los submódulos.
+
+2. Para procesar primero los módulos internos se usaría **Postorden**, porque primero procesa los hijos y finalmente el nodo principal.
+
+3. Para mostrar módulos nivel por nivel se usaría **BFS**, porque recorre el árbol por niveles utilizando una cola.
